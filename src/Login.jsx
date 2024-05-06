@@ -8,8 +8,11 @@ const Login = (props) => {
   const handleSubmit = (e) => {
    
     e.preventDefault();
-    if(lemail==props.email && lpassword==props.password ){
+    if(lemail==props.email   ){
 
+    }
+    else if(lpassword==props.password){
+      
     }
     else{
       alert('User email or paswword is Incorrect')
