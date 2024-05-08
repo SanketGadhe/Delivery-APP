@@ -17,6 +17,8 @@ const Signin = () => {
     // Reset form fields after submission
   };
   return (
+    <div className="flex justify-center items-center">
+
     <div className='py-16 px-8'>
     <div className="company text-xl font-semibold px-2">XYZ Delivery</div>
   <div className="mainbox">
@@ -55,6 +57,7 @@ const Signin = () => {
       <div className="guest flex justify-center mt-5">
           <UseButton content={'Continue as Guest'} color={'#111417'} textcolor={'#ffff'}/>
       </div>
+  </div>
   </div>
   </div>
   )

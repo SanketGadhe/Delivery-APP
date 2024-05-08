@@ -21,7 +21,9 @@ const Login = (props) => {
     // Reset form fields after submission
   };
   return (
-    <div className='py-16 px-8'>
+    <div className="flex justify-center items-center">
+    <div className='py-16 px-8 '>
+      
       <div className="company text-xl font-semibold px-2">XYZ Delivery</div>
     <div className="mainbox">
         <div className="welcome text-[32px] font-[300-light] pt-4 "><p>Welcome back</p>
@@ -50,7 +52,7 @@ const Login = (props) => {
             <UseButton content={'Continue as Guest'} color={'#111417'} textcolor={'#ffff'}/>
         </div>
     </div>
-    </div>
+    </div></div>
   )
 }
 
