@@ -1,25 +1,15 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import UseButton from './UseButton'
+
 import { FaArrowRight } from "react-icons/fa6";
 const Login = (props) => {
   const [lemail, setlemail] = useState('')
   const [lpassword, setlpassword] = useState('')
   const handleSubmit = (e) => {
-   
-    e.preventDefault();
-    if(lemail==props.email   ){
-
-    }
-    else if(lpassword==props.password){
-      
-    }
-    else{
-      alert('User email or paswword is Incorrect')
-    }
-    // Here you can perform form validation and submit data to backend
-    // Reset form fields after submission
+     e.preventDefault();
   };
+  console.log(lemail)
   return (
     <div className="flex justify-center items-center">
     <div className='py-16 px-8 '>
@@ -41,7 +31,7 @@ const Login = (props) => {
 </div>
 <div className="forglo flex justify-between py-5">
     <div className="forget text-[14px] font-[400-Normal] text-[#8b97a2]"><a > Forget Password?</a></div>
-    <div className="loginbut" onClick={handleSubmit}><UseButton content={'Login'} color={"#00968a"} textcolor={'#ffff'}/></div>
+    <div className="loginbut" onClick={handleSubmit}><NavLink to={'/Home'}><UseButton content={'Login'} color={"#00968a"} textcolor={'#ffff'}/></NavLink></div>
 </div>
 <div className="notacc flex text-[14px] font-[400-Normal] justify-between bg-white rounded-2xl px-6 py-3">
 <p className=''>Don't have an account? </p>
