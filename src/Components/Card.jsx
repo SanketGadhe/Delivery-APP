@@ -3,19 +3,23 @@ import { NavLink } from 'react-router-dom';
 
 const Card = (props) => {
     return (
-        <div className="card rounded-lg shadow-md bg-white px-6 py-4 m-4">
-            <div className="img flex justify-center">
-                <img src="src/Static/1.jpg" className="w-48" alt="" />
-            </div>
-            <div className="head font-bold text-xl mt-4">{props.heading}</div>
-            <div className="about text-gray-600 text-sm mt-2">{props.about}</div>
-            <div className="servbutton flex justify-center items-center mt-4">
-               <NavLink to={props.url}> <button className="bg-[#008b96] text-white font-bold py-2 px-6 rounded hover:opacity-70 transition-colors">
-                    {props.name}
-                </button></NavLink>
-            </div>
+      <div className='flex text-center  bg-white rounded-3xl w-[300px] py-12 px-6'>
+    <div className="center">
+        <div className="flex justify-center">
+
+        <div className="img bg-[#FFDAA3] rounded-full w-fit h-fit">
+            <img src={props.src} width={'125px'} height={'125px'} alt="" />
         </div>
+        </div>
+        <div className="boldtext text-xl font-bold mt-5">
+           {props.head}
+        </div>
+        <div className="text-sm my-5">
+       {props.text}
+        </div>
+
+    </div>
+      </div>
     );
 };
-
 export default Card;

@@ -5,7 +5,7 @@ import { MdOutlineContactSupport } from 'react-icons/md';
 
 const Dropdown = () => {
   return (
-    <div className="rounded-lg absolute top-10 right-0 bg-white shadow-md transition-all z-10">
+    <div className="rounded-lg absolute top-20 right-0 bg-white shadow-md transition-all z-10">
       <ul>
         <li className="py-2 px-4 hover:bg-gray-100">
           <Link to="/Profile" className="flex items-center space-x-2">

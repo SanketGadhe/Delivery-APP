@@ -28,10 +28,10 @@ const ifnav=()=>{
     setmobilenav(false)
   }
 }
-  const isAuthRoute = location.pathname === '/'|| location.pathname === '/login'||location.pathname === '/Login' || location.pathname === '/Register';
+  const isAuthRoute = location.pathname === '/';
   return (
     <>
-    <div className='whole bg-[#f1f4f8] pb-20 h-[1080px]' onClick={ifnav}> 
+    <div className='whole bg-[#FFF5E6]' onClick={ifnav}> 
     {!isAuthRoute ?<Navbar mobilenav={mobilenav} setmobilenav={setmobilenav} darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>:''}
     <Outlet/>
     </div>

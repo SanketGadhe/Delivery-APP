@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Rectangle 14 */
+.delform
+{
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 50%;
+    right: 5.07%;
+    top: 12.82%;
+    bottom: 46.51%;
+    
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 33px;
+    
+}

@@ -3,56 +3,46 @@ import React from 'react';
 
 const Tracing = () => {
   return (
-    <div className="bg-white rounded-lg shadow-md p-6 mt-20 mx-4">
-      <h2 className="text-2xl font-bold mb-4">Order Tracking</h2>
-      <div className="flex items-center justify-between bg-gray-100 rounded-lg p-4 mb-4">
-        <div className="flex items-center space-x-4">
-          <div className="w-12 h-12 bg-teal-500 text-white flex items-center justify-center rounded-full">
-            1
-          </div>
-          <div>
-            <h3 className="font-semibold">Order Placed</h3>
-            <p>May 15, 2024</p>
-          </div>
-        </div>
-        <div className="text-gray-600">
-          <p>Estimated Delivery:</p>
-          <p>May 20, 2024</p>
-        </div>
-      </div>
+    <div class="container mx-auto p-4 pt-6 md:p-6 lg:p-12 bg-white rounded shadow-md">
+ 
+  <div class="flex justify-between mb-4">
+    <h1 class="text-2xl font-bold">My Deliveries</h1>
+    <p class="text-sm text-gray-600">Varge and create great shopping experience for you</p>
+  </div>
 
-      <div className="flex items-center justify-between bg-gray-100 rounded-lg p-4 mb-4">
-        <div className="flex items-center space-x-4">
-          <div className="w-12 h-12 bg-gray-500 text-white flex items-center justify-center rounded-full">
-            2
-          </div>
-          <div>
-            <h3 className="font-semibold">In Transit</h3>
-            <p>Package is on its way to the destination.</p>
-          </div>
-        </div>
-        <div className="text-gray-600">
-          <p>Current Location:</p>
-          <p>New York, NY</p>
-        </div>
-      </div>
-
-      <div className="flex items-center justify-between bg-gray-100 rounded-lg p-4">
-        <div className="flex items-center space-x-4">
-          <div className="w-12 h-12 bg-gray-500 text-white flex items-center justify-center rounded-full">
-            3
-          </div>
-          <div>
-            <h3 className="font-semibold">Delivered</h3>
-            <p>Your package has been delivered.</p>
-          </div>
-        </div>
-        <div className="text-gray-600">
-          <p>Delivered On:</p>
-          <p>May 18, 2024</p>
-        </div>
+  <div class="flex flex-wrap -mx-4 mb-4">
+    <div class="w-full md:w-1/2 xl:w-1/3 p-4">
+      <div class="bg-white rounded shadow-md p-4">
+        <h2 class="text-lg font-bold">French Perfume</h2>
+        <p class="text-sm text-gray-600">90 ml</p>
+        <p class="text-sm text-gray-600">View Order Deals</p>
+        <p class="text-sm text-gray-600">Chat with your Customer Support</p>
+        <p class="text-sm text-gray-600">View Order Details</p>
       </div>
     </div>
+    <div class="w-full md:w-1/2 xl:w-1/3 p-4">
+      <div class="bg-white rounded shadow-md p-4">
+        <h2 class="text-lg font-bold">Rolex Watch</h2>
+        <p class="text-sm text-gray-600">20 Size</p>
+        <p class="text-sm text-gray-600">350 - Rs 299 Rs</p>
+        <p class="text-sm text-gray-600">Cancel Order</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-between mb-4">
+    <a href="#" class="text-sm text-gray-600">My Deliveries</a>
+    <a href="#" class="text-sm text-gray-600">All Purchases</a>
+    <a href="#" class="text-sm text-gray-600">To Pay</a>
+    <a href="#" class="text-sm text-gray-600">To Shopping</a>
+    <a href="#" class="text-sm text-gray-600">To Receive !!!</a>
+  </div>
+
+  <div class="flex justify-between mb-4">
+    <a href="#" class="text-sm text-gray-600">Completed</a>
+    <a href="#" class="text-sm text-gray-600">Canceled</a>
+    <a href="#" class="text-sm text-gray-600">Purchases History</a>
+  </div>
+</div>
   );
 };
 

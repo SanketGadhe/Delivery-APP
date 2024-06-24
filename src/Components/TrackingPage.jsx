@@ -2,49 +2,78 @@ import React from 'react';
 
 const TrackingPage = () => {
   return (
-    <div className="bg-white rounded-lg shadow-md p-6 mt-4">
-      <h2 className="text-3xl font-bold mb-8 text-center">Order Tracking</h2>
-      
-      <div className="flex items-center justify-between bg-gray-100 rounded-lg p-6 mb-8">
-        <div>
-          <h3 className="text-xl font-semibold mb-4">Order #123456</h3>
-          <p className="text-gray-600">Status: In Transit</p>
-        </div>
-        <div className="text-gray-600">
-          <p>Estimated Delivery:</p>
-          <p>May 20, 2024</p>
-        </div>
-      </div>
+    <div class="container mx-auto p-6">
+    <h1 class="text-2xl font-bold text-center mb-6">Parcel Tracking</h1>
 
-      <div className="flex items-center justify-between bg-gray-100 rounded-lg p-6 mb-8">
-        <div>
-          <h3 className="text-xl font-semibold mb-4">Order #789012</h3>
-          <p className="text-gray-600">Status: Delivered</p>
+    <div class="bg-white rounded-lg shadow-md p-6">
+        <div class="flex justify-between items-center mb-4">
+            <div>
+                <h2 class="text-lg font-semibold">Order ID: <span class="text-blue-500">abc122</span></h2>
+            </div>
+            <div>
+                <h2 class="text-lg font-semibold">Tracking No: <span class="text-blue-500">bahedg727</span></h2>
+            </div>
         </div>
-        <div className="text-gray-600">
-          <p>Delivered On:</p>
-          <p>May 18, 2024</p>
-        </div>
-      </div>
 
-      <div className="flex items-center justify-between bg-gray-100 rounded-lg p-6 mb-8">
-        <div>
-          <h3 className="text-xl font-semibold mb-4">Order #345678</h3>
-          <p className="text-gray-600">Status: Pending</p>
+        <div class="flex justify-between items-center mb-4">
+            <div>
+                <h2 class="text-lg font-semibold">Shipped With: <span class="text-blue-500">Best Delivery</span></h2>
+            </div>
+            <div>
+                <h2 class="text-lg font-semibold">Shipping to: <span class="text-blue-500">Mumbai</span></h2>
+            </div>
         </div>
-        <div className="text-gray-600">
-          <p>Estimated Delivery:</p>
-          <p>May 25, 2024</p>
-        </div>
-      </div>
 
-      {/* Complaint Button */}
-      <div className="flex justify-center">
-        <button className="bg-red-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-red-600 transition-colors">
-          Lodge a Complaint
-        </button>
-      </div>
+        <div class="flex justify-between items-center mb-4">
+            <div>
+                <h2 class="text-lg font-semibold">Ship Date: <span class="text-blue-500">01/01/2008</span></h2>
+            </div>
+            <div>
+                <h2 class="text-lg font-semibold">Expected Delivery Date: <span class="text-blue-500">04/01/2008</span></h2>
+            </div>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="text-lg font-semibold mb-2">Tracking Status:</h2>
+            <div class="flex items-center">
+                <div class="w-4 h-4 rounded-full bg-green-500 mr-2"></div>
+                <p class="font-medium text-gray-600">Shipped</p>
+            </div>
+            <div class="flex items-center">
+                <div class="w-4 h-4 rounded-full bg-yellow-500 mr-2"></div>
+                <p class="font-medium text-gray-600">In Transit</p>
+            </div>
+            <div class="flex items-center">
+                <div class="w-4 h-4 rounded-full bg-gray-500 mr-2"></div>
+                <p class="font-medium text-gray-600">Delivered</p>
+            </div>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="text-lg font-semibold mb-2">Tracking History:</h2>
+            <ul class="list-none mb-0">
+                <li class="flex items-center mb-2">
+                    <div class="w-4 h-4 rounded-full bg-green-500 mr-2"></div>
+                    <p class="font-medium text-gray-600">Shipped from warehouse on 01/01/2008</p>
+                </li>
+                <li class="flex items-center mb-2">
+                    <div class="w-4 h-4 rounded-full bg-yellow-500 mr-2"></div>
+                    <p class="font-medium text-gray-600">In transit on 02/01/2008</p>
+                </li>
+                <li class="flex items-center mb-2">
+                    <div class="w-4 h-4 rounded-full bg-gray-500 mr-2"></div>
+                    <p class="font-medium text-gray-600">Delivered on 04/01/2008</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mt-6 text-center">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                Track Order
+            </button>
+        </div>
     </div>
+</div>
   );
 };
 
